@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>يوسف سۆچی - داگرکەرا ڤیدیۆیان</title>
+    <title>یوسف سۆچی - داگرکەرا ڤیدیۆیان</title>
     <style>
         body {
             background-color: #0f172a;
@@ -127,7 +127,9 @@
                 alert("ژ بەر هەوە، لێنکا ڤیدیۆیێ دانە!");
                 return;
             }
-            alert("لینک هاتە وەرگرتن: " + url + "\nڤیدیۆ ب 120fps دهێتە داگرتن!");
+            // ڤەکرنا پەڕەیا داگرتنێ یا ڕاستەقینە ل سەر بنەمایێ لینکێ هاتیە دایین
+            alert("لینک هاتە وەرگرتن! نوکە ڤیدیۆ ب 120fps دهێتە ئامادەکرن...");
+            window.open('https://tikmate.app/en/?url=' + encodeURIComponent(url), '_blank');
         }
     </script>
 
